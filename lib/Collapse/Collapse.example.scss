@@ -1,0 +1,49 @@
+.collapse {
+  border: 1px solid #606060;
+  border-radius: 8px;
+  box-shadow: 0 0 4px 0 #ccc;
+  padding: 16px;
+  h2 {
+    padding: 16px;
+  }
+  .panel {
+    position: relative;
+    line-height: 30px;
+    padding: 16px;
+    border-top: 1px solid #606060;
+    cursor: pointer;
+    &:last-child {
+      border-bottom: 1px solid #606060;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      right: 30px;
+      top: 50%;
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-top: 2px solid #606060;
+      border-right: 2px solid #606060;
+      transform: rotate(45deg);
+      &.active {
+        transform: rotate(135deg);
+        transition: all .3s;
+      }
+    }
+    p {
+      height: 0;
+      overflow: hidden;
+      transition: all .3s;
+      &.active {
+        height: auto;
+        padding-bottom: 16px;
+      }
+    }
+  }
+}

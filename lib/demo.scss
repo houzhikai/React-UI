@@ -1,0 +1,37 @@
+//demo css
+.demo-example {
+  position: relative;
+  padding: 16px 0;
+  border: 1px solid #ccc;
+  margin: 8px 0;
+  box-shadow: 0 0 4px #ccc;
+  .prism-code {
+    margin: 6px auto;
+  }
+}
+
+.demo-button {
+  position: absolute;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 4px;
+  box-shadow: 4px 2px 2px #ccc;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  bottom: 10px;
+  right: 10px;
+
+  &:hover {
+    background: #6aafd8;
+    color: white;
+  }
+}
+
+pre {
+  font-family: "Fira Code Medium", Consolas, monospace;
+  background: #282828;
+  max-width: 1000px;
+  border-radius: 6px;
+  margin-top: 10px;
+  padding: 10px;
+}

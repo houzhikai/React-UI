@@ -1,0 +1,23 @@
+//布局
+.React-UI-Layout {
+  display: flex;
+  flex-direction: column;
+  .React-UI-layout-content { //1
+    flex-grow: 1;
+  }
+  .React-UI-Layout-hasAside {
+    flex-direction: row;
+    flex-grow: 1;
+    .React-UI-Layout {
+      flex-grow: 1;
+      margin-left: 6px;
+    }
+  }
+}
+//位置
+.Layout-wrapper{
+  padding: 16px;
+  h2{
+    padding-bottom: 16px;
+  }
+}

@@ -1,0 +1,6 @@
+//babel 的配置
+{
+    "presets": [
+        "react-app"
+    ]
+}
